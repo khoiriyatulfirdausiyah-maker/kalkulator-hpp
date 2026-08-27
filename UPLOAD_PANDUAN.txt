@@ -1,0 +1,28 @@
+KALKULATOR HPP - FILE GITHUB LENGKAP
+
+ISI UTAMA YANG HARUS ADA DI ROOT REPOSITORY:
+1. .github/
+2. app/
+3. build.gradle
+4. gradle.properties
+5. settings.gradle
+6. README.md
+
+CARA NORMAL:
+- Ekstrak ZIP utama.
+- Buka folder hasil ekstrak.
+- Pastikan folder .github dan app terlihat.
+- Upload SEMUA ISI folder tersebut ke root repository GitHub.
+- Setelah commit, buka Actions > Build APK.
+
+JIKA BROWSER LAMA TIDAK MAU MENGUPLOAD FOLDER:
+- Upload file android-project.zip ke root repository.
+- Buka tab Actions di GitHub.
+- Pilih "set up a workflow yourself".
+- Hapus isi default lalu copy isi file BUILD_APK_WORKFLOW_COPY.yml.
+- Sebelum "Build debug APK", tambahkan langkah unzip android-project.zip jika memakai cara cadangan ini.
+  (Cara normal tetap yang paling mudah jika folder bisa ter-upload.)
+
+CATATAN:
+- Jangan upload ZIP utama langsung ke repo tanpa diekstrak.
+- File .github/workflows/build-apk.yml adalah yang membuat menu Actions bekerja.
